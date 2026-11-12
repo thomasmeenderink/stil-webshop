@@ -190,6 +190,7 @@ function render(state) {
   }
   results.removeAttribute('aria-busy');
   countEl.textContent = `${list.length} ${list.length === 1 ? 'product' : 'producten'}`;
+  form.querySelector('[data-filters-done]').textContent = `Bekijk ${countEl.textContent}`;
   const title = pageTitle(state);
   titleEl.textContent = title;
   document.title = `${title} — STIL`;
@@ -215,6 +216,8 @@ function bindEvents() {
     if (event.target.name === 'q') return; // zoeken loopt via 'input'
     update();
   });
+  // De sorteerkeuze staat buiten het <form>-element (in de toolbar), dus change bubbelt niet naar het formulier.
+  sortSelect.addEventListener('change', () => update());
   form.addEventListener('input', (event) => {
     if (!['q', 'min', 'max'].includes(event.target.name)) return;
     clearTimeout(searchTimer);
@@ -240,11 +243,20 @@ function bindEvents() {
     (activeEl.querySelector('.pill') || sortSelect).focus();
   });
 
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
+  const setPanel = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
     form.classList.toggle('is-open', open);
+  };
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    setPanel(open);
     if (open) form.querySelector('input')?.focus();
+  });
+  // Mobiel: filterpaneel sluiten en terug naar de resultaten.
+  form.querySelector('[data-filters-done]').addEventListener('click', () => {
+    setPanel(false);
+    toggle.focus();
+    toggle.scrollIntoView({ block: 'start' });
   });
 
   window.addEventListener('popstate', () => {
