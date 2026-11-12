@@ -103,23 +103,35 @@ export function cartLinesHtml(items) {
     .join('')}</ul>`;
 }
 
-export function summaryHtml(totals, { showCheckout = true } = {}) {
+export function summaryHtml(totals, { showCheckout = true, showProgress = true } = {}) {
   const pct = Math.min(100, Math.round(((FREE_SHIPPING_THRESHOLD - totals.remainingForFreeShipping) / FREE_SHIPPING_THRESHOLD) * 100));
   const shippingMsg =
     totals.remainingForFreeShipping > 0
       ? `Nog <strong>${formatPrice(totals.remainingForFreeShipping)}</strong> tot gratis verzending.`
       : 'Je bestelling wordt <strong>gratis</strong> verzonden.';
   return `
-    <div class="shipping-progress">
+    ${showProgress ? `<div class="shipping-progress">
       <p>${shippingMsg}</p>
       <div class="progress" aria-hidden="true"><span style="width:${pct}%"></span></div>
-    </div>
+    </div>` : ''}
     <dl class="totals">
       <div><dt>Subtotaal</dt><dd>${formatPrice(totals.subtotal)}</dd></div>
       <div><dt>Verzending</dt><dd>${totals.shipping === 0 ? 'Gratis' : formatPrice(totals.shipping)}</dd></div>
       <div class="totals__total"><dt>Totaal <span class="muted">(incl. btw)</span></dt><dd>${formatPrice(totals.total)}</dd></div>
     </dl>
     ${showCheckout ? `<div class="stack-sm"><a class="btn btn--block" href="checkout.html">Afrekenen</a><a class="btn btn--outline btn--block" href="cart.html">Bekijk winkelmand</a></div>` : ''}`;
+}
+
+export function orderLinesHtml(items) {
+  return items
+    .map(
+      (i) => `<li class="order-line">
+        <div class="order-line__thumb"><img src="${escapeHtml(i.afbeelding)}" alt="" width="56" height="70"><span class="order-line__qty" aria-hidden="true">${i.aantal}</span></div>
+        <div><p>${escapeHtml(i.naam)}</p><p class="muted">${escapeHtml(i.kleur)} · Maat ${escapeHtml(i.maat)} <span class="visually-hidden">· Aantal ${i.aantal}</span></p></div>
+        <p>${formatPrice(i.prijs * i.aantal)}</p>
+      </li>`,
+    )
+    .join('');
 }
 
 // Rendert regels in een container en houdt de toetsenbordfocus op dezelfde knop na een update.

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afrekenen — STIL</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" src="js/checkout.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="container">
+    <div class="page-head">
+      <p class="eyebrow">Stap 1 van 2 — gegevens</p>
+      <h1 class="page-title">Afrekenen</h1>
+    </div>
+
+    <div data-checkout-empty hidden>
+      <div class="empty-state">
+        <p><strong>Je winkelmand is leeg.</strong></p>
+        <p class="muted">Voeg eerst iets toe voordat je gaat afrekenen.</p>
+        <a class="btn" href="shop.html">Naar de shop</a>
+      </div>
+    </div>
+
+    <div class="checkout" data-checkout>
+      <form novalidate data-checkout-form aria-labelledby="form-title">
+        <h2 class="visually-hidden" id="form-title">Je gegevens</h2>
+        <div class="error-summary" data-error-summary tabindex="-1" hidden>
+          <h2>Controleer de volgende velden</h2>
+          <ul data-error-list></ul>
+        </div>
+
+        <fieldset>
+          <legend>Contact</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="voornaam">Voornaam</label>
+              <input class="input" id="voornaam" name="voornaam" autocomplete="given-name" required aria-describedby="voornaam-error">
+              <p class="field__error" id="voornaam-error"></p>
+            </div>
+            <div class="field">
+              <label for="achternaam">Achternaam</label>
+              <input class="input" id="achternaam" name="achternaam" autocomplete="family-name" required aria-describedby="achternaam-error">
+              <p class="field__error" id="achternaam-error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">E-mailadres</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-hint email-error">
+            <p class="field__hint" id="email-hint">Hier sturen we je orderbevestiging naartoe.</p>
+            <p class="field__error" id="email-error"></p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bezorgadres</legend>
+          <div class="field">
+            <label for="straat">Straat en huisnummer</label>
+            <input class="input" id="straat" name="straat" autocomplete="street-address" required aria-describedby="straat-error">
+            <p class="field__error" id="straat-error"></p>
+          </div>
+          <div class="field-row field-row--postcode">
+            <div class="field">
+              <label for="postcode">Postcode</label>
+              <input class="input" id="postcode" name="postcode" autocomplete="postal-code" required aria-describedby="postcode-error">
+              <p class="field__error" id="postcode-error"></p>
+            </div>
+            <div class="field">
+              <label for="plaats">Plaats</label>
+              <input class="input" id="plaats" name="plaats" autocomplete="address-level2" required aria-describedby="plaats-error">
+              <p class="field__error" id="plaats-error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="land">Land</label>
+            <select class="select" id="land" name="land" autocomplete="country">
+              <option value="NL">Nederland</option>
+              <option value="BE">België</option>
+              <option value="DE">Duitsland</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <button class="btn btn--block" type="submit" data-pay>Betalen met Stripe</button>
+        <p class="secure-note">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          Je rondt de betaling veilig af bij Stripe.
+        </p>
+        <p class="notice" data-demo-notice hidden>
+          <strong>Demo-modus:</strong> er is nog geen Stripe Payment Link ingesteld in <code>js/config.js</code>.
+          Je gaat daarom direct naar de bevestigingspagina, er wordt niets afgeschreven.
+        </p>
+      </form>
+
+      <aside class="summary-box" aria-labelledby="order-title">
+        <h2 id="order-title">Je bestelling</h2>
+        <ul class="order-lines" data-order-lines></ul>
+        <div data-order-totals></div>
+        <a class="link-btn" href="cart.html">Winkelmand aanpassen</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
