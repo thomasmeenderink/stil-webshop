@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: canvas-tote">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#eeebe3" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M160 180 Q160 100 200 100 Q240 100 240 180" fill="none" stroke="#3a3936" stroke-opacity=".55" stroke-width="10"/><rect x="118" y="176" width="164" height="214"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

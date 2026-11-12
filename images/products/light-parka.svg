@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: light-parka">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#cdba96" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M148 112 Q156 64 200 64 Q244 64 252 112 L288 128 L328 330 L292 338 L268 230 L274 450 L126 450 L132 230 L108 338 L72 330 L112 128 Z"/><path d="M200 120 L200 450" stroke="#000" stroke-opacity=".3" stroke-width="3" fill="none"/><path d="M150 330 h40 v36 h-40 Z M210 330 h40 v36 h-40 Z" fill="#000" fill-opacity=".1" stroke="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

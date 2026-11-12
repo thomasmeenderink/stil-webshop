@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: coach-jacket">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#1c1c1c" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M154 96 L180 84 L200 108 L220 84 L246 96 L286 116 L326 316 L290 324 L264 216 L264 410 L136 410 L136 216 L110 324 L74 316 L114 116 Z"/><path d="M200 108 L200 410" stroke="#000" stroke-opacity=".3" stroke-width="3" fill="none"/><path d="M152 170 h34 v30 h-34 Z M214 170 h34 v30 h-34 Z" fill="#000" fill-opacity=".1" stroke="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

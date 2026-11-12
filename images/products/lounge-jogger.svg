@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: lounge-jogger">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#8a8a8a" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M140 90 L260 90 L270 380 L272 410 L218 410 L216 380 L200 190 L184 380 L182 410 L128 410 L130 380 Z"/><path d="M130 384 L182 384 M218 384 L270 384 M140 108 L260 108" stroke="#000" stroke-opacity=".18" stroke-width="4" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

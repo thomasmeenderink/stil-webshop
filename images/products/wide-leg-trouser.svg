@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: wide-leg-trouser">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#1c1c1c" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M142 84 L258 84 L290 414 L214 414 L200 196 L186 414 L110 414 Z"/><path d="M142 102 L258 102" stroke="#000" stroke-opacity=".15" stroke-width="3" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

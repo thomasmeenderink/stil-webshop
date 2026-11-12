@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: heavyweight-tee">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#eeebe3" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M150 110 L178 96 Q200 116 222 96 L250 110 L318 150 L294 196 L262 180 L262 392 L138 392 L138 180 L106 196 L82 150 Z"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

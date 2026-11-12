@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: relaxed-chino">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#cdba96" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M140 90 L260 90 L276 412 L216 412 L200 190 L184 412 L124 412 Z"/><path d="M140 106 L260 106" stroke="#000" stroke-opacity=".15" stroke-width="3" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

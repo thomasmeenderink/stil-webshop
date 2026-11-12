@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: zip-hoodie">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#5b5e3a" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M148 120 Q156 66 200 66 Q244 66 252 120 L286 134 L326 324 L290 332 L264 214 L264 404 L136 404 L136 214 L110 332 L74 324 L114 134 Z"/><path d="M168 122 Q200 150 232 122 Q228 88 200 86 Q172 88 168 122 Z" fill="#000" fill-opacity=".18" stroke="none"/><path d="M200 136 L200 404" stroke="#000" stroke-opacity=".35" stroke-width="3" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

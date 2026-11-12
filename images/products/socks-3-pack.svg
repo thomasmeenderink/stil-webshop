@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: socks-3-pack">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#ffffff" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M168 96 L228 96 L228 296 Q228 326 258 336 L300 348 Q332 360 322 390 Q312 412 280 406 L200 392 Q168 386 168 350 Z"/><path d="M168 120 L228 120" stroke="#000" stroke-opacity=".15" stroke-width="6" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>

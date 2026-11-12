@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder: crewneck-sweater">
+  <rect width="400" height="500" fill="#f2f1ee"/>
+  <g fill="#1f2a44" stroke="#000" stroke-opacity=".14" stroke-width="2" stroke-linejoin="round">
+    <path d="M150 112 L176 100 Q200 120 224 100 L250 112 L290 140 L326 330 L292 338 L262 200 L262 392 L138 392 L138 200 L108 338 L74 330 L110 140 Z"/><path d="M138 372 L262 372" stroke="#000" stroke-opacity=".15" stroke-width="6" fill="none"/>
+  </g>
+  <text x="200" y="478" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#9a9894">STIL · PLACEHOLDER</text>
+</svg>
