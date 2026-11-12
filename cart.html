@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winkelmand — STIL</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" src="js/pages/cart.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="container">
+    <div class="page-head">
+      <h1 class="page-title">Winkelmand</h1>
+      <p class="muted" data-cart-subtitle aria-live="polite"></p>
+    </div>
+
+    <div class="cart-page">
+      <section aria-labelledby="lines-title">
+        <h2 class="visually-hidden" id="lines-title">Artikelen</h2>
+        <div data-cart-lines></div>
+      </section>
+      <aside class="summary-box" aria-labelledby="summary-title" data-summary-box>
+        <h2 id="summary-title">Overzicht</h2>
+        <div data-cart-summary></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
